@@ -31,4 +31,4 @@ jobs:
       - name: Check commit message
         uses: wagoid/commitlint-github-action@v3
         with:
-          config: commitlint.config.js
+          configFile: commitlint.config.js  # Corrected input name

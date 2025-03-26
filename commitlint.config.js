@@ -1,7 +1,5 @@
-
-import { defineConfig } from '@commitlint/config-conventional';
-export default defineConfig({
-  extends: [],
+module.exports = {
+  extends: ['@commitlint/config-conventional'],
   rules: {
     'header-min-length': [2, 'always', 20],
     'header-case-start-capital': [2, 'always', /^[A-Z]/],
@@ -22,4 +20,4 @@ export default defineConfig({
       },
     },
   ],
-});
+};
