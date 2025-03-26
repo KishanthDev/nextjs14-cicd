@@ -31,4 +31,8 @@ jobs:
       - name: Check commit message
         uses: wagoid/commitlint-github-action@v3
         with:
-          configFile: commitlint.config.js  # Corrected input name
+          configFile: commitlint.config.cjs  # Updated file name
+          firstParent: true
+          failOnWarnings: false
+          helpURL: https://github.com/conventional-changelog/commitlint/#what-is-commitlint
+          token: ${{ secrets.GITHUB_TOKEN }}
