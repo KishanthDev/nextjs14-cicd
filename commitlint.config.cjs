@@ -1,10 +1,10 @@
 module.exports = {
-    extends: ['@commitlint/config-conventional'],
-    rules: {
-      'header-min-length': [2, 'always', 20],
-      'header-case-start-capital': [2, 'always', /^[A-Z]/],
-      'header-end-period': [2, 'always', /\.$/],
-    },
+  extends: ['@commitlint/config-conventional'],
+  rules: {
+    'header-min-length': [2, 'always', 20],
+    'header-case-start-capital': [2, 'always', /^[A-Z]/],
+    'header-end-period': [2, 'always', /\.$/],
+  },
   plugins: [
     {
       rules: {
