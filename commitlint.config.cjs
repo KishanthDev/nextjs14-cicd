@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   extends: ['@commitlint/config-conventional'],
   rules: {
     'header-min-length': [2, 'always', 20],
