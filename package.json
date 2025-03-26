@@ -6,7 +6,9 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "eslint . --ext .js,.ts,.tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --ext .js,.ts,.tsx --fix",
+    "format": "prettier --write ."
   },
   "dependencies": {
     "react": "^19.0.0",
@@ -23,5 +25,18 @@
     "eslint": "^9",
     "eslint-config-next": "15.2.4",
     "@eslint/eslintrc": "^3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm run lint && npm run format"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx}": [
+      "eslint --fix",
+      "npm run lint",
+      "npm run fomat"
+    ]
   }
 }
