@@ -1,4 +1,6 @@
-module.exports = {
+
+import { defineConfig } from '@commitlint/config-conventional';
+export default defineConfig({
   extends: [],
   rules: {
     'header-min-length': [2, 'always', 20],
@@ -20,4 +22,4 @@ module.exports = {
       },
     },
   ],
-};
+});
