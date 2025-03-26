@@ -6,8 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint . --ext .js,.ts,.tsx --report-unused-disable-directives --max-warnings 0",
-    "lint:fix": "eslint . --ext .js,.ts,.tsx --fix",
+    "lint": "eslint . --ext js,ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "lint:fix": "eslint . --ext js,ts,tsx --fix",
     "format": "prettier --write ."
   },
   "dependencies": {
